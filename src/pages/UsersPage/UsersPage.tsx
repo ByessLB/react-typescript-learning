@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 
 import { User, UserCard } from "../../components/UserCard/UserCard";
 
-// TODO importer les utilisateurs du fichier "/assets/data/users.tsx"
+// ? importer les utilisateurs du fichier "/assets/data/users.tsx"
 import usersData from "../../assets/data/users";
-// TODO ajouter le css modulaire pour cette page
+// ? ajouter le css modulaire pour cette page
 import styles from "./UsersPage.module.css";
 
 const UsersPage = () => {
@@ -12,19 +12,19 @@ const UsersPage = () => {
     const [users, setUsers] = useState<User[] |[]>([]);
 
 
-    // TODO compléter ce useEffect qui se déclenche à la création du composant
+    // ? compléter ce useEffect qui se déclenche à la création du composant
     // Dans un premier temps : complétez le avec la tableau d'utilisateurs provenant du fichier "assets/data/users.tsx"
     //
     // Dans un deuxième temps, ajoutez une requête HTTP pour l'obtention des données 
     // Url à utiliser : https://jsonplaceholder.typicode.com/users
     // Tutoriel pouvant vous aider : https://dev.to/antdp425/react-fetch-data-from-api-with-useeffect-27le
     useEffect(() => {
-        // TODO mise à jour du state
+        // ? mise à jour du state
         setUsers(usersData);
     }, []);
 
     return (
-        // TODO faire interface graphique pour la liste des utilisateurs
+        // ? faire interface graphique pour la liste des utilisateurs
         // Pour générer les "cards" utilisateur veillez à vous servir du composant "UserCard
         <div className={styles.usersContainer}>
             {

@@ -27,7 +27,7 @@ const RandomWordPage = () => {
   const [secondWord, setSecondWord] = useState<string>("");
 
   useEffect(() => {
-    // TODO mettre quelque chose ici
+    // ? mettre quelque chose ici
     // Question, quand ce déclenche la fonction associée à ce "useEffect" ?
     if (firstWord != "") {
       alert("Un premier mot a été créé !");
@@ -39,7 +39,7 @@ const RandomWordPage = () => {
   }, [firstWord]);
 
   useEffect(() => {
-    // TODO mettre quelque chose ici
+    // ? mettre quelque chose ici
     // Question, quand ce déclenche la fonction associée à ce "useEffect" ?
     if (secondWord != "") {
       alert("Un second mot a été créé !");
@@ -51,7 +51,7 @@ const RandomWordPage = () => {
   }, [secondWord]);
 
   useEffect(() => {
-    // TODO mettre quelque chose ici
+    // ? mettre quelque chose ici
     // Question, quand ce déclenche la fonction associée à ce "useEffect" ?
     alert("L'effet s'exécute qu'une fois !");
     /*
@@ -61,7 +61,7 @@ const RandomWordPage = () => {
   }, []); // tableau de dépendances à des variables d'état vide ! Qu'est ce ça fait ?
 
   useEffect(() => {
-    // TODO mettre quelque chose ici
+    // ? mettre quelque chose ici
     // Question, quand ce déclenche la fonction associée à ce "useEffect" ?
     alert("Je m'exécute à chaque rendu !");
     /*

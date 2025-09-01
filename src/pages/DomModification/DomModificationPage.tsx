@@ -21,7 +21,7 @@ const DomModificationPage = () => {
     // références pour les éléments du DOM
     // référence vers le titre
     const titleRef = useRef<HTMLHeadingElement>(null);
-    // TODO référence vers le paragraphe
+    // ? référence vers le paragraphe
     // Quel est le type "TypeScript" a utiliser ?
     const paragraphRef = useRef<HTMLParagraphElement>(null);
 
@@ -64,11 +64,11 @@ const DomModificationPage = () => {
             const isHighlighted = paragraph.classList.contains(styles.highlighted);
 
             if (isHighlighted) { // si c'est bien "highlighted"
-                // TODO insérer un toggle pour passer en normal
+                // ? insérer un toggle pour passer en normal
                 // paragraph.classList.toggle( ????????? )
                 paragraph.classList.toggle(styles.normal)
             } else {
-                // TODO insérer un toggle pour passer en highlighted
+                // ? insérer un toggle pour passer en highlighted
                 paragraph.classList.toggle(styles.highlighted)
 
             }
@@ -101,6 +101,7 @@ const DomModificationPage = () => {
                 </button>
             </div>
             <p 
+            // Petit rajout du useRef
             ref={paragraphRef}
             className={styles.paragraph + ' ' + styles.normal}>
                 Paragraphe avec style modifiable
